@@ -37,8 +37,8 @@ async def root():
     return {"message": "Dream11 AI Team Predictor API is running"}
 
 
-@app.post("/predict-live-team/{match_id}")
-async def predict_live_team(match_id: str):
+@app.post("/predict-live-team/{season}/{match_number}")
+async def predict_live_team(season: str, match_number: int):
     try:
         # TODO: Implement the actual prediction logic here
         # This is a placeholder response
